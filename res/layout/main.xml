@@ -4,9 +4,83 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView
+    <TabHost
+        android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ListView
+                        android:id="@+id/listView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                    </ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                
+                
+                    <ListView
+                        android:id="@+id/listView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                    </ListView>                
+				</LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                
+                    <ListView
+                        android:id="@+id/listView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                    </ListView>                
+                </LinearLayout>                
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+  
+                
+                    <ListView
+                        android:id="@+id/listView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                    </ListView>
+                </LinearLayout>                                    
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 
 </LinearLayout>
