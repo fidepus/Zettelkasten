@@ -20,19 +20,19 @@ public class MedienproduktVocabActivity extends TabActivity
 		//startService(new Intent(this, OnlineService.class));
 		TabHost tabHost = getTabHost();
 		tabHost.addTab(tabHost.newTabSpec("1").setIndicator("neu", getResources().getDrawable(R.drawable.ic_tab_neu)).setContent(new Intent(this, Neu.class)));
-		tabHost.addTab(tabHost.newTabSpec("2").setIndicator("1x", getResources().getDrawable(R.drawable.ic_tab_einmal)).setContent(new Intent(this, Einmal.class)));
-		tabHost.addTab(tabHost.newTabSpec("3").setIndicator("2x", getResources().getDrawable(R.drawable.ic_tab_zweimal)).setContent(new Intent(this, Zweimal.class)));
-		tabHost.addTab(tabHost.newTabSpec("4").setIndicator("3x", getResources().getDrawable(R.drawable.ic_tab_dreimal)).setContent(new Intent(this, Dreimal.class)));
+		tabHost.addTab(tabHost.newTabSpec("2").setIndicator("einmal", getResources().getDrawable(R.drawable.ic_tab_einmal)).setContent(new Intent(this, Einmal.class)));
+		tabHost.addTab(tabHost.newTabSpec("3").setIndicator("zweimal", getResources().getDrawable(R.drawable.ic_tab_zweimal)).setContent(new Intent(this, Zweimal.class)));
+		tabHost.addTab(tabHost.newTabSpec("4").setIndicator("dreimal", getResources().getDrawable(R.drawable.ic_tab_dreimal)).setContent(new Intent(this, Dreimal.class)));
 	}
 	
-	@Override
+	/* 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
     	MenuInflater inflater = getMenuInflater();
     	inflater.inflate(R.menu.menu, menu);
 	    return true;
 	}
 	
-	@Override
+@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle item selection
 	    switch (item.getItemId()) {
@@ -44,5 +44,5 @@ public class MedienproduktVocabActivity extends TabActivity
 		    default:
 		        return super.onOptionsItemSelected(item);
 	    }
-	}
+	} */
 }

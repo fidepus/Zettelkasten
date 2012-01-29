@@ -32,11 +32,12 @@ public final class R {
     public static final class layout {
         public static final int add=0x7f030000;
         public static final int dreimal=0x7f030001;
-        public static final int einmal=0x7f030002;
-        public static final int ic_tab_neu=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int neu=0x7f030005;
-        public static final int zweimal=0x7f030006;
+        public static final int dummytext=0x7f030002;
+        public static final int einmal=0x7f030003;
+        public static final int ic_tab_neu=0x7f030004;
+        public static final int main=0x7f030005;
+        public static final int neu=0x7f030006;
+        public static final int zweimal=0x7f030007;
     }
     public static final class menu {
         public static final int menu=0x7f050000;
