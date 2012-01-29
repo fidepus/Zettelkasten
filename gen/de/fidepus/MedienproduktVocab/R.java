@@ -12,20 +12,25 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int ic_tab_dreimal=0x7f020001;
+        public static final int ic_tab_dreimal_white=0x7f020002;
+        public static final int ic_tab_einmal=0x7f020003;
+        public static final int ic_tab_einmal_white=0x7f020004;
+        public static final int ic_tab_neu=0x7f020005;
+        public static final int ic_tab_neu_white=0x7f020006;
+        public static final int ic_tab_zweimal=0x7f020007;
+        public static final int ic_tab_zweimal_white=0x7f020008;
+        public static final int plus=0x7f020009;
     }
     public static final class id {
-        public static final int linearLayout1=0x7f050000;
-        public static final int listView1=0x7f050002;
-        public static final int listView2=0x7f050004;
-        public static final int listView3=0x7f050006;
-        public static final int listView4=0x7f050008;
-        public static final int tab1=0x7f050001;
-        public static final int tab2=0x7f050003;
-        public static final int tab3=0x7f050005;
-        public static final int tab4=0x7f050007;
+        public static final int menuItemAdd=0x7f060000;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int ic_tab_neu=0x7f030000;
+        public static final int main=0x7f030001;
+    }
+    public static final class menu {
+        public static final int menu=0x7f050000;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
