@@ -3,5 +3,7 @@
 
     <string name="hello">Hello World, MedienproduktVocabActivity!</string>
     <string name="app_name">Zettelkasten</string>
+    <string name="englishVocab">English word</string>
+    <string name="deVocab">German word</string>
 
 </resources>
