@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="Add" />
+        <activity android:name="DBAdapter" />
+        <activity android:name="Dreimal" />
+        <activity android:name="Einmal" />
+        <activity android:name="Neu" />
+        <activity android:name="Zweimal" />
     </application>
 
 </manifest>

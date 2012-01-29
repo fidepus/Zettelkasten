@@ -37,7 +37,7 @@ public class MedienproduktVocabActivity extends TabActivity
 	    // Handle item selection
 	    switch (item.getItemId()) {
 		    case R.id.menuItemAdd:
-	        Intent settingsActivity = new Intent(getBaseContext(), Settings.class);
+	        Intent settingsActivity = new Intent(getBaseContext(), Add.class);
 	        startActivity(settingsActivity);
 		      return true;
 		      
