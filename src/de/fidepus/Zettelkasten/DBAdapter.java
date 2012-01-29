@@ -23,7 +23,7 @@ public class DBAdapter
     private static final String DATABASE_CREATE =
         "create table titles (_id integer primary key autoincrement, "
         + "de text not null, en text not null, " 
-        + "gelernt text not null);";
+        + "gelernt int not null);";
         
     private final Context context; 
     

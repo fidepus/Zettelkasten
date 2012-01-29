@@ -8,7 +8,8 @@ import android.widget.TextView;
 public class Einmal extends Activity {
 
 
-    public void onCreate(Bundle savedInstanceState) {
+    @Override
+	public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dummytext);
