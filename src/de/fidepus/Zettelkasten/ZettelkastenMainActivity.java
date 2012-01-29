@@ -26,10 +26,10 @@ public class ZettelkastenMainActivity extends TabActivity
 		tabHost.addTab(tabHost.newTabSpec("4").setIndicator("dreimal", getResources().getDrawable(R.drawable.ic_tab_dreimal)).setContent(new Intent(this, Dreimal.class)));
 	}
 	
-	 	@Override
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-    	MenuInflater inflater = getMenuInflater();
-    	inflater.inflate(R.menu.menu, menu);
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.menu, menu);
 	    return true;
 	}
 	
