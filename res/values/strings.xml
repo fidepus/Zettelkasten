@@ -2,6 +2,6 @@
 <resources>
 
     <string name="hello">Hello World, MedienproduktVocabActivity!</string>
-    <string name="app_name">MedienproduktVocab</string>
+    <string name="app_name">Zettelkasten</string>
 
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.fidepus.MedienproduktVocab"
+    package="de.fidepus.Zettelkasten"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -23,7 +23,7 @@
         <activity android:name="Dreimal" />
         <activity android:name="Einmal" />
         <activity android:name="Neu" />
-        <activity android:name="Zweimal" />
-    </application>
+        <activity android:name="Zweimal" />   
+            </application>
 
 </manifest>
