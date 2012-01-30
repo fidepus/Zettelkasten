@@ -321,6 +321,10 @@ public class Add extends Activity
     		textTwo.setText(row.get(2).toString());
     		tableRow.addView(textTwo);
  
+//    		TextView textThree = new TextView(this);
+//    		textThree.setText(row.get(3).toString());
+//    		tableRow.addView(textThree);
+    		
     		dataTable.addView(tableRow);
     	}
     }

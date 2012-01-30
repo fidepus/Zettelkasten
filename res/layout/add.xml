@@ -119,8 +119,13 @@
 				android:text="@string/th_text_one"
 				android:minWidth="125px"
 				/>
+
 			<TextView
-				android:text="@string/th_text_two"
+			    android:minWidth="125px"
+			    android:text="@string/th_text_two" />
+
+			<TextView
+				android:text="@string/th_text_three"
 				android:minWidth="125px"
 				/>
 		</TableRow>

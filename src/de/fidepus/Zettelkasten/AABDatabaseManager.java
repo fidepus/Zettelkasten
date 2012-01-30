@@ -289,7 +289,8 @@ public class AABDatabaseManager
 										TABLE_ROW_ID + " integer primary key autoincrement not null," +
 										TABLE_ROW_ONE + " text," +
 										TABLE_ROW_TWO + " text," +
-										TABLE_ROW_THREE + " text" +
+										// find out how the default works!
+										TABLE_ROW_THREE + " integer default '0' " +
 										");";
 			// execute the query string to the database.
 			db.execSQL(newTableQueryString);

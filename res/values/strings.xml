@@ -19,5 +19,6 @@
     <string name="th_id">ID</string>
     <string name="th_text_one">Text Field One</string>
     <string name="th_text_two">Text Field Two</string>
+    <string name="th_text_three">Text Field Three</string>
 
 </resources>
