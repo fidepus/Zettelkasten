@@ -28,12 +28,11 @@ import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import de.fidepus.Zettelkasten.AABDatabaseManager;
  
 public class Add extends Activity
 {
 	// the text fields that users input new data into
-	EditText 	textFieldOne, textFieldTwo,
+	EditText 	textFieldOne, textFieldTwo, textFieldThree,
 				idField, 
 				updateIDField, updateTextFieldOne, updateTextFieldTwo;
  
@@ -91,6 +90,7 @@ public class Add extends Activity
         // THE DATA FORM FIELDS
         textFieldOne= 		(EditText)findViewById(R.id.text_field_one);
         textFieldTwo= 		(EditText)findViewById(R.id.text_field_two);
+        textFieldThree= 	(EditText)findViewById(R.id.text_field_three);
         idField= 			(EditText)findViewById(R.id.id_field);
         updateIDField=		(EditText)findViewById(R.id.update_id_field);
         updateTextFieldOne=	(EditText)findViewById(R.id.update_text_field_one);
@@ -161,7 +161,8 @@ public class Add extends Activity
     		(
     				textFieldOne.getText().toString(),
     				//I think the null is where the gelernt field should be
-    				textFieldTwo.getText().toString(), null
+    				textFieldTwo.getText().toString(),
+    				textFieldThree.getText().toString()
     		);
  
     		// request the table be updated

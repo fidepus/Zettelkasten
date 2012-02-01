@@ -16,18 +16,30 @@
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	>
+
     	<EditText
-    		android:id="@+id/text_field_one"
-    		android:layout_width="wrap_content"
-    		android:layout_height="wrap_content"
-    		android:minWidth="100px"
-    		/>
+    	    android:id="@+id/text_field_one"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/englishVocab"
+    	    android:minWidth="100px" />
+
     	<EditText
-    		android:id="@+id/text_field_two"
-    		android:layout_width="wrap_content"
-    		android:layout_height="wrap_content"
-    		android:minWidth="100px"
-    		/>
+    	    android:id="@+id/text_field_two"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/deVocab"
+    	    android:minWidth="100px" />
+    	
+    	<EditText
+    	    android:id="@+id/text_field_three"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/nada"
+    	    android:minWidth="15px"
+    	    android:text="@string/nada"
+    	    />
+
 		<Button
 			android:id="@+id/add_button"
     		android:text="@string/add"

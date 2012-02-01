@@ -20,5 +20,9 @@
     <string name="th_text_one">Text Field One</string>
     <string name="th_text_two">Text Field Two</string>
     <string name="th_text_three">Text Field Three</string>
+    <string name="nada">0</string>
+    
+    <string name="no_notes">No Notes Yet</string>
+    <string name="menu_insert">Add Item</string>
 
 </resources>

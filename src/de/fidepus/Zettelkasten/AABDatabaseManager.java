@@ -54,7 +54,7 @@ public class AABDatabaseManager
 	 * @param rowStringOne the value for the row's first column
 	 * @param rowStringTwo the value for the row's second column 
 	 */
-	public void addRow(String rowStringOne, String rowStringTwo, Integer rowStringThree)
+	public void addRow(String rowStringOne, String rowStringTwo, String rowStringThree)
 	{
 		// this is a key value pair holder used by android's SQLite functions
 		ContentValues values = new ContentValues();
@@ -180,8 +180,70 @@ public class AABDatabaseManager
 		// return the ArrayList containing the given row from the database.
 		return rowArray;
 	}
+	
+	/**********************************************************************
+	 * RETRIEVING ALL ROWS FROM THE DATABASE TABLE
+	 * 
+	 * This is an example of how to retrieve all data from a database
+	 * table using this class.  You should edit this method to suit your
+	 * needs.
+	 * 
+	 * the key is automatically assigned by the database
+	 */
  
+	public ArrayList<ArrayList<Object>> getGelerntRowsAsArrays(long gelerntValue)
+	{
+		// create an ArrayList that will hold all of the data collected from
+		// the database.
+		ArrayList<ArrayList<Object>> dataArrays = new ArrayList<ArrayList<Object>>();
  
+		// this is a database call that creates a "cursor" object.
+		// the cursor object store the information collected from the
+		// database and is used to iterate through the data.
+		Cursor cursor;
+ 
+		try
+		{
+			// ask the database object to create the cursor.
+			cursor = db.query(
+					TABLE_NAME,
+					new String[]{TABLE_ROW_ID, TABLE_ROW_ONE, TABLE_ROW_TWO, TABLE_ROW_THREE},
+					TABLE_ROW_THREE + "=" + gelerntValue,
+					null, null, null, null, null
+			);
+ 
+			// move the cursor's pointer to position zero.
+			cursor.moveToFirst();
+ 
+			// if there is data after the current cursor position, add it
+			// to the ArrayList.
+			if (!cursor.isAfterLast())
+			{
+				do
+				{
+					ArrayList<Object> dataList = new ArrayList<Object>();
+ 
+					dataList.add(cursor.getLong(0));
+					dataList.add(cursor.getString(1));
+					dataList.add(cursor.getString(2));
+					dataList.add(cursor.getString(3));
+ 
+					dataArrays.add(dataList);
+				}
+				// move the cursor's pointer up one position.
+				while (cursor.moveToNext());
+			}
+		}
+		catch (SQLException e)
+		{
+			Log.e("DB Error", e.toString());
+			e.printStackTrace();
+		}
+ 
+		// return the ArrayList that holds the data collected from
+		// the database.
+		return dataArrays;
+	}
  
  
 	/**********************************************************************
