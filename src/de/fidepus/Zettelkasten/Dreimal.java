@@ -20,12 +20,16 @@ package de.fidepus.Zettelkasten;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
  
 public class Dreimal extends Activity
 {
@@ -156,5 +160,32 @@ public class Dreimal extends Activity
     		
     		dataTable.addView(tableRow);
     	}
+    }
+    
+    public void randAsk(View view) {
+//    	Toast msg = Toast.makeText(Neu.this,
+//                "You clicked the button!", Toast.LENGTH_LONG);
+//msg.show();
+
+    	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    	builder.setTitle("What's that in German?");
+    	builder.setMessage("Here be words");
+    	final EditText input = new EditText(this);
+    	builder.setView(input);
+    	builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+    	      public void onClick(DialogInterface dialog, int which) {
+    	 
+    	      	Toast msg = Toast.makeText(Dreimal.this,
+                "Nice!", Toast.LENGTH_LONG);
+msg.show();
+    	 
+    	    } });
+       	builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+  	      public void onClick(DialogInterface dialog, int which) {
+  
+                dialog.cancel();
+  	 
+  	    } });
+    	builder.show();
     }
 }
